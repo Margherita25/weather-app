@@ -1,0 +1,48 @@
+.border {
+  color: #5a6275;
+  width: 700px;
+  margin: auto;
+}
+.engine {
+  width: 325px;
+  background-color: #ebecee;
+  border-radius: 6px;
+  border-color: #ff3366;
+  border-style: solid;
+}
+button {
+  color: #ff3366;
+  border-radius: 6px;
+  border-color: #ff3366;
+  padding: 0 30px;
+  font-weight: bold;
+  border-style: solid;
+}
+.number {
+  font-size: 800;
+}
+.units {
+  color: #ff3366;
+  font-size: small;
+}
+.celsius {
+  color: #ff3366;
+  font-size: small;
+}
+.fahrenheit {
+  color: #ff3366;
+  font-size: small;
+}
+.main {
+  color: #ff3366;
+  font-weight: bolder;
+  padding: 20px 0 0;
+}
+.infos {
+  font-weight: lighter;
+  color: #ff3366;
+  padding: 0 0 20px;
+}
+.row {
+  color: #ff3366;
+}

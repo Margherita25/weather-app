@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="frame.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="border p-5 border-2 rounded shadow">
+        <div class="card">
+          <div class="card-header">
+            <form id="search-form">
+              <input
+                class="engine"
+                type="text"
+                placeholder="Enter a city.."
+                id="city-input"
+              />
+              <button>Search</button
+              ><button id="current-location-button">Current</button>
+            </form>
+          </div>
+        </div>
+
+        <h5 class="card-title">
+          <div class="row main">
+            <div class="col" id="city"></div>
+            <div class="col">
+              <span class="temperature" id="temperature"></span>
+              <span class="units">
+                <a href="#" id="celsius-link" class="celsius">°C</a>|
+                <a href="#" id="fahrenheit-link" class="fahrenheit">°F</a></span
+              >
+            </div>
+          </div>
+          <div class="infos">
+            <div class="row">
+              <div class="col" id="date"></div>
+              <div class="col">Humidity:<span id="humidity"></span>%</div>
+              <div class="row">
+                <div class="col" id="description"></div>
+                <div class="col">Wind:<span id="wind"></span>km/h</div>
+              </div>
+            </div>
+          </div>
+        </h5>
+        <div class="card text-center">
+          <div class="card-header">
+            <div class="row">
+              <div class="col">SAT</div>
+              <div class="col">SUN</div>
+              <div class="col">MON</div>
+              <div class="col">TUE</div>
+              <div class="col">WED</div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-2">
+                <img src="images/rainy.svg" width="90" />
+              </div>
+              <div class="col-3">
+                <img src="images/sun.svg" width="90" />
+              </div>
+              <div class="col-2">
+                <img src="images/rainy.svg" width="90" />
+              </div>
+              <div class="col-2">
+                <img src="images/rainy.svg" width="90" />
+              </div>
+              <div class="col">
+                <img src="images/sun.svg" width="90" />
+              </div>
+            </div>
+          </div>
+          <div class="card-footer text-muted">
+            <div class="row">
+              <div class="col">18°</div>
+              <div class="col">24°</div>
+              <div class="col">19°</div>
+              <div class="col">21°</div>
+              <div class="col">23°</div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
