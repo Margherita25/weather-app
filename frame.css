@@ -46,3 +46,12 @@ button {
 .row {
   color: #ff3366;
 }
+.link {
+  padding-left: 220px;
+  color: #5a6275;
+  text-decoration: none;
+}
+
+.myself {
+  color: #ff3366;
+}
